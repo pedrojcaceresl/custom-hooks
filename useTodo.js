@@ -1,14 +1,7 @@
 import { useEffect, useReducer } from "react";
 import { todoReducer } from "../08-useReducer/todoReducer";
 
-const initialState = [
-    // {
-    // 	id: new Date().getTime(),
-    // 	description: "Study React",
-    // 	done: false,
-    // },
-
-];
+const initialState = [];
 
 const init = () => {
     return JSON.parse(localStorage.getItem('todos') || []);
